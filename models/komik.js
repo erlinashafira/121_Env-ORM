@@ -1,3 +1,4 @@
+
 module.exports = (sequelize, DataTypes) => {
     const komik = sequelize.define("komik", {
         id: {
@@ -9,11 +10,12 @@ module.exports = (sequelize, DataTypes) => {
             type: DataTypes.STRING,
         },
         description: {
-            type : DataTypes.STRING,
+            type: DataTypes.STRING,
         },
         author: {
-            title: DataTypes.STRING,
+            type: DataTypes.STRING,
         }
-});
+    });
+
     return komik;
 };
